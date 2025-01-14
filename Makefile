@@ -8,7 +8,7 @@ PKG_LICENSE:=GPL-3.0-or-later
 ifeq ("$(wildcard ../dns-server-test)", "")
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/karen07/dns-server-test.git
-PKG_SOURCE_VERSION:=7b73cf9ac2051846726b4d48d201e071969e151f
+PKG_SOURCE_VERSION:=v$(PKG_VERSION)
 endif
 
 include $(INCLUDE_DIR)/package.mk
