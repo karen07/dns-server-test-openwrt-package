@@ -1,20 +1,19 @@
 # dns-server-test OpenWrt package
 
-This repository contains the OpenWrt package definition for [dns-server-test](https://github.com/karen07/dns-server-test), a cache-backed DNS test server.
-
-The package installs the `dns-server-test` binary into `/usr/bin` and does not declare additional OpenWrt runtime dependencies.
-
-For development, the Makefile can build from a sibling `../dns-server-test` checkout. Otherwise OpenWrt fetches the tagged upstream source specified by `PKG_VERSION`.
+OpenWrt packaging for [dns-server-test](https://github.com/karen07/dns-server-test), a
+cache-backed DNS replay server. It installs the server binary on OpenWrt.
 
 ## Описание
 
-Этот репозиторий содержит описание пакета OpenWrt для [dns-server-test](https://github.com/karen07/dns-server-test), тестового DNS-сервера с ответами из локального кеша.
+Пакет OpenWrt для [dns-server-test](https://github.com/karen07/dns-server-test) - тестового
+DNS-сервера, воспроизводящего ответы из локального кеша. Устанавливает исполняемый файл
+сервера на OpenWrt.
 
 Пакет устанавливает бинарный файл `dns-server-test` в `/usr/bin` и не объявляет дополнительных зависимостей времени выполнения OpenWrt.
 
 При разработке Makefile может собирать исходники из соседнего каталога `../dns-server-test`. Если такого каталога нет, OpenWrt загружает версию исходников по тегу, заданному в `PKG_VERSION`.
 
-## Что находится в репозитории
+## Структура проекта
 
 - `dns-server-test/Makefile` - описание OpenWrt package;
 - `openwrt-build.env` - параметры пакета для общего CI;
